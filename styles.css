@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    pading: 0;
+}
+
+.main{
+    background-color: aquamarine;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .genius{
+    background-color: #FFF;
+    width: 600px;
+    height: 600px;
+    border-radius: 100%;
+    display: grid;
+    grid-template-areas: "green red" "blue yellow";
+    grid-gap: 10px;
+    border: 1px solid #FFF;
+}
+
+.main .genius .green{
+    background-color: green;
+    grid-area: green;
+    border-top-left-radius: 100%;
+}
+
+.main .genius .red{
+    background-color: red;
+    grid-area: red;
+    border-top-right-radius: 100%;
+}
+
+.main .genius .blue {
+    background-color: blue;
+    grid-area: blue;
+    border-bottom-left-radius: 100%;
+}
+
+.main .genius .yellow {
+    background-color: yellow;
+    grid-area: yellow;
+    border-bottom-right-radius: 100%;
+}
+
+.selected {
+    opacity: 0.4;
+}
